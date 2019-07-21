@@ -8,7 +8,7 @@ import PropTypes from "prop-types";
 const Register = ({ setAlert, register, isAuthenticated }) => {
   const [formData, setFormData] = useState({
     name: "",
-    emai: "",
+    email: "",
     password: "",
     password2: ""
   });
@@ -25,7 +25,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
   };
   //Redirect if register
   if (isAuthenticated) {
-    return <Redirect to='/dshboard' />;
+    return <Redirect to='/dashboard' />;
   }
   return (
     <Fragment>

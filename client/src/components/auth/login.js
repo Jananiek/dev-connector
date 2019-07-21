@@ -7,7 +7,7 @@ import { login } from "../../actions/auth";
 const Login = ({ login, isAuthenticated }) => {
   const [formData, setFormData] = useState({
     name: "",
-    emai: "",
+    email: "",
     password: "",
     password2: ""
   });
@@ -21,7 +21,7 @@ const Login = ({ login, isAuthenticated }) => {
   };
   //Redirect if login
   if (isAuthenticated) {
-    return <Redirect to='/dshboard' />;
+    return <Redirect to='/dashboard' />;
   }
   return (
     <Fragment>
