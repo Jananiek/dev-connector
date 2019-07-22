@@ -9,7 +9,7 @@ const ProfileEducation = ({
       <h3>{school}</h3>
       {from && (
         <p>
-          <Moment format='YYYy-MM-DD'>{from}</Moment>-
+          <Moment format='YYYY-MM-DD'>{from}</Moment>-
           {current ? "Current" : <Moment format='YYYY-MM-DD'>{to}</Moment>}
         </p>
       )}
