@@ -31,7 +31,7 @@ const Education = ({ education, deleteEducation }) => {
   return (
     <Fragment>
       <h2 className='my-2'>Education Credentials</h2>
-      {educations.lenght > 0 ? (
+      {educations.length > 0 ? (
         <table className='table'>
           <thead>
             <tr>
