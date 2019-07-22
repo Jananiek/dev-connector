@@ -10,7 +10,7 @@ const ProfileExperience = ({
       <h3 className='text-dark'>{company}</h3>
       {from && (
         <p>
-          <Moment format='YYYY-MM-DD'>{from}</Moment>}-
+          <Moment format='YYYY-MM-DD'>{from}</Moment>-
           {current ? "Current" : <Moment format='YYYY=MM-DD'>{to}</Moment>}
         </p>
       )}

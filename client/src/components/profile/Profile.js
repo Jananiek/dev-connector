@@ -64,14 +64,9 @@ const Profile = ({
                 <h4>No Education Credencials Provided</h4>
               )}
             </div>
-            <div className='profile-github'>
-              <h2 className='text-primary my-1'>
-                <i className='fab fa-github' /> Github Repos
-              </h2>
-              {profile.githubusername && (
-                <ProfileGithub username={profile.githubusername} />
-              )}
-            </div>
+            {profile.githubusername && (
+              <ProfileGithub username={profile.githubusername} />
+            )}
           </div>
         </Fragment>
       )}
