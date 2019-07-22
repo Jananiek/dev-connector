@@ -25,7 +25,6 @@ const Profile = ({
         <Spinner />
       ) : (
         <Fragment>
-          Profile
           <Link to='/profiles' className='btn btn-light'>
             Bact To Profiles
           </Link>
