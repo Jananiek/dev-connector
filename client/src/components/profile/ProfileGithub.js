@@ -8,7 +8,7 @@ import Spinner from "../layouts/Spinner";
 const ProfileGithub = ({ username, getGithubRepos, repos }) => {
   useEffect(() => {
     getGithubRepos(username);
-  }, [getGithubRepos]);
+  }, [getGithubRepos, username]);
   return (
     <Fragment>
       {repos !== null ? (
